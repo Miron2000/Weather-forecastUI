@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.ico" type="../images/logo.ico">
+    <link rel="stylesheet" href="./style/Style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="./Index.js"></script>
+    <title>My weather app</title>
+
+</head>
+
+<body class='body'>
+
+    <div class="input-btn">
+        <input class="input" type="text" name="city" placeholder="Write city"></input>
+        <input class="search" id="search" type="button" value="Search"></input>
+    </div>
+    <div class="center">
+        <div class="row">
+            <div class="weather">
+                <div class='flex'>
+                    <i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>
+                    <h2 id="temp"></h2>
+                    <h1 id='degree'></h1>
+                </div>
+            </div>
+            <div class='info'>
+                <div class="info-row">
+                    <h3 id='speed'></h3>
+                    <h3 class='ms'>M/S</h3>
+                </div>
+                <div class="info-row-1">
+                    <i class="fa fa-tint" aria-hidden="true"></i>
+                    <h3 class='hum'>Humidity</h3>
+                    <h3 id='humidity'></h3>
+                    <h3 class="percent">%</h3>
+                </div>
+                <div class="info-row-2">
+                    <i class="fa fa-cloud" aria-hidden="true"></i>
+                    <h3 id='clouds'></h3>
+                    <h3 class="percent-cloud">%</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-1">
+            <div class="name-city">
+                <div class='name-city-row'>
+                    <h2 id='country'></h2>
+                    <h2 id='default-city'></h2>
+                </div>
+                <div id='clock'></div>
+
+            </div>
+
+            <div class="weather-ico">
+                <i id="weather-icons"></i>
+                <h2 id="description"></h2>
+            </div>
+        </div>
+
+    </div>
+
+    <!--     //wind.speed-швидкість вітру -->
+    <!--    //humidity-вологість -->
+    <!--     clouds.all-хмарність -->
+    <!--     0.main-яка погода -->
+    <!--     0.description-інформація про цю погоду -->
+</body>
+
+</html>
